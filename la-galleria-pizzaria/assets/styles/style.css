@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #460000;
+}
+  
+  a {
+    color: #000000;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+
+  .perfil img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+  }
+
+  .header {
+    background-image: url(../imagens/nav-banner.png);
+    padding-inline: 16px;
+  }
+  
+  .nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+ 
+  .nav-list {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+  
+  .nav-list a {
+    font-size: 18px;
+    color: #1e1e1e;
+  }
+
+  .nav-list i {
+    font-size: 24px;
+  }
+  
+  .hero {
+    height: calc(100vh - 70px);
+    background: center / cover no-repeat url("./bg.jpg");
+  }
+  
+  .hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #000000;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #000000;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+  }
+
+  .logo {
+    width: 180px;
+    left: 7%;
+    position: absolute;
+  }
+  
+ 
+  .banner {
+    height: 92vh; /* O banner ocupa 88% da altura da tela */
+    background-image: url('../imagens/banner.png'); /* Substitua 'sua-imagem.jpg' pelo caminho da sua imagem de fundo */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    max-width: 600px; 
+    color:  #FFD700;
+    left: 10%;
+}
+
+.content h1 {
+    font-size: 2.7rem;
+    margin-bottom: 10px;
+}
+
+.content p {
+  margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8c0303 !important;
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #63030386;
+}
+
+@font-face {
+  font-family: 'Pacifico';
+  src: url('../fonts/Pacifico-Regular.ttf') format('truetype');
+}
+
+.logo2 {
+  font-family: 'Pacifico', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 5rem !important;
+}
+
+.sobre {
+  background-color: #460000;
+  width: 100%;
+  height: 650px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.sobre img {
+  max-width: 600px;
+  position: absolute;
+  right: 3%;
+}
+
+.footer {
+  background-color: #710101; /* Cor de fundo vinho */
+  color: #cccaca; /* Cor do texto branco */
+  text-align: left;
+  padding: 50px;
+}
+
+.footer-content {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-content h3 {
+  margin-bottom: 10px;
+}
+
+.contact-info, .social-media, .about-us {
+  flex: 1;
+  padding: 10px;
+}
+
+.social-link {
+  display: block;
+  margin-top: 5px;
+  color: #cccaca; /* Cor dos links */
+  text-decoration: none;
+}
+
+.about-us {
+  max-width: 300px;
+}
+
+.contact-info {
+  max-width: 300px;
+}
+
+.social-media {
+  max-width: 300px;
+}
+
+.social-media i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.social-link:hover {
+  text-decoration: underline;
+}
+
+
+
+@media (max-width: 1450px) { 
+
+  .sobre img {
+    display: none;
+  }
+}
+
+
+
+.sobre p, h2 {
+  color: #fdfdfd;
+}
+
+.content2 {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  left: 10%;
+  max-width: 800px; 
+  color:  #ffffff;
+}
+
+.content2 h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.content2 p {
+margin-bottom: 20px;
+}
+
+.cardapio {
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+  justify-content: center;
+  display: flex;
+  background: #630303;
+}
+
+.cardapio2 {
+  width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+  justify-content: center;
+  display: flex;
+  background: #630303;
+}
+
+.titlebox {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 50px 0px 50px 0px;
+  height: auto;
+  background-color: #630303;
+  color: #ececec;
+}
+
+.titlebox h1 {
+  font-size: 3rem;
+  font-family: 'Pacifico';
+  font-weight: lighter!important;
+}
+
+.carddad {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card {
+  width: 280px;
+  height: 380px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #fde141, #FFA500);
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+}
+
+.card img {
+  max-width: 200px;
+}
+
+.pizza {
+  margin-left: 15px;
+}
+
+.textbox {
+  text-align: left;
+  width: auto;
+  height: auto;
+  margin: 15px 0px 15px 0px;
+}
+
+.textbox h2 {
+  color: #1b1b1b !important;
+  font-size: 26px;
+}
+
+.textbox p {
+  color: #056b2c;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media (max-width: 750px) {
+
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #350101 !important;
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+  .sobre {
+    padding: 200px 0px 200px 0px;
+  }
+  .logo2 {
+    font-family: 'Pacifico', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    font-size: 4rem !important;
+  }
+
+  .banner {
+    background-size: auto;
+  }
+   .banner h1 {
+    font-size: 2rem;
+    max-width: 350px;
+   }
+
+   .banner p {
+    font-size: 12px;
+   }
+
+   .carddad {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .content2 h2 {
+    font-size: 1.4rem;
+    max-width: 300px;
+  }
+  
+  .content2 p {
+    font-size: 16px;
+    max-width: 300px;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 9999;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #FFD700;
+    clip-path: circle(100px at 90% -15%);
+    transition: 1s ease-out;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    pointer-events: none;
+    z-index: 9998;
+  }
+
+  .nav-list a {
+    font-size: 24px;
+    opacity: 0;
+  }
+
+  .nav-list li:nth-child(1) a {
+    transition: 0.5s 0.2s;
+  }
+
+  .nav-list li:nth-child(2) a {
+    transition: 0.5s 0.4s;
+  }
+
+  .nav-list li:nth-child(3) a {
+    transition: 0.5s 0.6s;
+  }
+
+  .nav.active .nav-list {
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+  }
+
+  .nav.active .nav-list a {
+    opacity: 1;
+  }
+
+  .nav.active .hamburger {
+    position: fixed;
+    top: 26px;
+    right: 60px;
+    border-top-color: transparent;
+  }
+
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  
+  .footer-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-content h3 {
+    margin-bottom: 20px;
+  }
+  
+}
+
+
+
